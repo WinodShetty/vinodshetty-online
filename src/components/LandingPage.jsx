@@ -17,8 +17,7 @@ const LandingPage = () => {
     <section className="landing-page" style={{ backgroundImage: `url(${bgForest})` }}>
       <div className="overlay">
         <div className="content">
-          <h1 className="title">Hello, I am Vinod Shetty</h1>
-          <p className="subtitle">Welcome to My Complex</p>
+          
           <div className="buttons">
             <Link to="#about" className="btn primary">About Me</Link>
             <Link to="#works" className="btn secondary">My Works</Link>
@@ -32,6 +31,8 @@ const LandingPage = () => {
               Chat on WhatsApp
             </a>
           </div>
+          <h1 className="title">Hello, I am Vinod Shetty</h1>
+          <p className="subtitle">Welcome to My Complex</p>
         </div>
       </div>
     </section>
