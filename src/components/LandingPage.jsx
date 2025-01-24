@@ -5,7 +5,7 @@ import bgForest from "../assets/images/bg-forest.jpg"; // Correct import path fo
 
 const LandingPage = () => {
   // Replace this with your actual WhatsApp phone number
-  const whatsappNumber = "8099869576";
+  const whatsappNumber = "918099869576";
 
   return (
     <section className="landing-page" style={{ backgroundImage: `url(${bgForest})` }}>
