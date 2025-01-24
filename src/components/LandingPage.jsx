@@ -34,7 +34,7 @@ const LandingPage = () => {
           <h1 className="title">Hello, I am Vinod Shetty</h1>
           <p className="subtitle">Welcome to My Complex</p>
         </div>
-        <h3>Website is under development, and we’ll be live soon.</h3>
+        <h3>Website is under development</h3>
       </div>
     </section>
   );
