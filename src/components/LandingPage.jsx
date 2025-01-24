@@ -4,8 +4,14 @@ import "../styles/landingPage.css"; // Import the CSS for styling
 import bgForest from "../assets/images/bg-forest.jpg"; // Correct import path for the image
 
 const LandingPage = () => {
-  // Replace this with your actual WhatsApp phone number
-  const whatsappNumber = "918099869576";
+  // WhatsApp phone number (with country code)
+  const whatsappNumber = "918099869576"; // Example number (replace with your actual number)
+  
+  // Pre-filled message for WhatsApp chat
+  const message = "Hey Vinod Shetty, can I get more details on this?";
+
+  // URL encode the message to ensure it works in the URL
+  const encodedMessage = encodeURIComponent(message);
 
   return (
     <section className="landing-page" style={{ backgroundImage: `url(${bgForest})` }}>
@@ -18,7 +24,7 @@ const LandingPage = () => {
             <Link to="#works" className="btn secondary">My Works</Link>
             <Link to="#contact" className="btn primary">Contact Me</Link>
             <a 
-              href={`https://wa.me/${whatsappNumber}`} 
+              href={`https://wa.me/${whatsappNumber}?text=${encodedMessage}`} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn whatsapp-btn"
