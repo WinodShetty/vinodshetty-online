@@ -1,0 +1,72 @@
+/* landingPage.css */
+.landing-page {
+    position: relative;
+    height: 100vh; /* Full screen height */
+    background-size: cover; /* Make sure the image covers the full area */
+    background-position: center; /* Center the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-page .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+}
+
+.landing-page .content {
+    text-align: center;
+    color: white;
+    z-index: 1; /* Ensures content appears above the overlay */
+}
+
+/* Typing animation */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* No blinking cursor after typing is done */
+.landing-page h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #4f9ee7;
+    overflow: hidden; /* Ensures the text is hidden until it is typed */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    /* border-right: 3px solid #4f9ee7; Adds a cursor-like effect */
+    animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end 4s ; Typing animation, with delay for the cursor stop
+}
+
+/* Blinking cursor effect */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.landing-page .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.buttons .btn {
+    margin: 1rem;
+    padding: 1rem 2rem;
+    background-color: #0063bf; /* Primary button color */
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.buttons .btn:hover {
+    background-color: #2a6ae2; /* Darker hover effect */
+}

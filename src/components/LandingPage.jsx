@@ -1,0 +1,35 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/landingPage.css"; // Import the CSS for styling
+import bgForest from "../assets/images/bg-forest.jpg"; // Correct import path for the image
+
+const LandingPage = () => {
+  // Replace this with your actual WhatsApp phone number
+  const whatsappNumber = "8099869576";
+
+  return (
+    <section className="landing-page" style={{ backgroundImage: `url(${bgForest})` }}>
+      <div className="overlay">
+        <div className="content">
+          <h1 className="title">Hello, I am Vinod Shetty</h1>
+          <p className="subtitle">Welcome to My Complex</p>
+          <div className="buttons">
+            <Link to="#about" className="btn primary">About Me</Link>
+            <Link to="#works" className="btn secondary">My Works</Link>
+            <Link to="#contact" className="btn primary">Contact Me</Link>
+            <a 
+              href={`https://wa.me/${whatsappNumber}`} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn whatsapp-btn"
+            >
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default LandingPage;

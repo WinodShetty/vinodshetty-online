@@ -1,0 +1,42 @@
+/* contactMe.css */
+.contact-me {
+    background: url('https://via.placeholder.com/1500x1000/00bfae/ffffff?text=Nature') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+  
+  .contact-me form {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-me input,
+  .contact-me textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-me button {
+    padding: 1rem;
+    background-color: #3e7c2c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-me button:hover {
+    background-color: #2e6a2f;
+  }
+  
