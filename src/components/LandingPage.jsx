@@ -26,6 +26,11 @@ const LandingPage = () => {
         <div className="content">
           <h1 className="title">Hello, I am Vinod Shetty</h1>
           <p className="subtitle">Welcome to My Complex</p>
+          <img 
+          src="src\assets\images\profile.jpg" 
+          alt="Vinod Shetty" 
+          className="profile-image" 
+        />
           
           {/* Toggle Bar Icon (for mobile view) */}
           <div className="toggle-bar" onClick={handleToggleMenu}>

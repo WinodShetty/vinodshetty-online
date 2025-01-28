@@ -13,7 +13,7 @@ const AboutMe = () => {
           I enjoy creating websites with nature-inspired designs, earthy colors, and smooth animations.
         </p>
         <img 
-          src="https://via.placeholder.com/300?text=Vinod+Shetty" 
+          src="src\assets\images\profile.jpg" 
           alt="Vinod Shetty" 
           className="profile-image" 
         />

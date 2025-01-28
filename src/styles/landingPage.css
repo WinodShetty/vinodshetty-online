@@ -160,6 +160,12 @@
     left: 39%;
     position: fixed;
   }
+
+  .profile-image{
+    justify-content: end;
+    margin-left: 70%;
+    margin-top: 200%;
+  }
   
   /* Mobile and tablet devices */
   @media screen and (max-width: 768px) {
