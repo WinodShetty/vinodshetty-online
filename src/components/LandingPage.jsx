@@ -56,7 +56,7 @@ const LandingPage = () => {
             Chat on WhatsApp
           </a>
         </div>
-        <h3>Website is under Development</h3>
+        <h3>Website is under Development Thankyou</h3>
       </div>
     </section>
   );
